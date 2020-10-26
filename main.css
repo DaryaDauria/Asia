@@ -1,0 +1,394 @@
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  background:#001821;
+  color: #fff;
+  line-height: 1.42;
+  /* font-size: ; */
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+  margin: 0;
+}
+
+ a {
+   color: inherit;
+ }
+ ul {
+   padding: 0px;
+   margin: 0px;
+
+ }
+
+ ul li {
+   list-style: none;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   font-weight: normal;
+  
+ }
+ p {
+   margin-top: 0;
+ }
+* {
+box-sizing: border-box;
+}
+.main-page-wrapper{
+  background: url("./images/bg/hero.jpg") center top no-repeat, url("./images/bg/bottom-pic.jpg") right bottom 307px no-repeat;
+}
+.about__desc-text p {
+  margin-bottom: 20px;
+}
+.about__desc-text p:last-child {
+  margin-bottom: 0;
+}
+ .content {
+   margin: 0 auto;
+   width: 1140px;
+ }
+.header {
+  min-height: 94px;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 0px;
+}
+
+.menu {
+  position: absolute;
+  top: 28px;
+  left: 155px;
+}
+
+.contacts {
+  top: 12px;
+  right: 0px;
+  /* position: absolute; */
+  text-align: right
+}
+
+.menu__item{
+display: inline-block;
+vertical-align: middle;
+margin-right: 54px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__link--activ.menu__link{
+color: #F5170E;
+}
+.menu__link {
+  font-size: 14px;
+  text-decoration: none;
+}
+.menu__link:hover {
+color: #F5170E;
+}
+.contacts__tel {
+  text-decoration: none;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+.contacts__work{
+  font-size: 13px;
+  text-decoration-line: underline;
+}
+
+.preview {
+  width: 510px;
+    margin-bottom: 34px;
+}
+.preview__title {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 34px;
+
+}
+.preview__desc {
+  font-size: 18px;
+ 
+}
+.button {
+  background: #F5170E;
+  border-radius: 35px;
+  padding: 18px, 40px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 168px;
+height: 55px;
+margin-bottom: 246px;
+border: 1px solid transparent;
+}
+.button:hover {
+  background: #fff;
+  color: #F5170E;
+}
+
+.tours {
+  margin-bottom: 127px;
+}
+
+}
+
+.tours__title {
+ 
+  height: 49px;
+  width: 300px;
+  display: inline-block;
+  margin-bottom: 54px;
+}
+
+
+.tours__title-text {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.tours__item {
+width: 362px;
+height: 436px;
+vertical-align: top;
+margin-right: 15px;
+display: inline-block;
+border-radius: 5px 5px 0px 0px;
+background: #fff;
+
+}
+
+.tours:last-child {
+  margin-right: 0px;
+}
+
+.tours__subtitle {
+  font-size: 24px;
+  font-weight: bold;
+ color: black;
+ margin-bottom: 6px;
+}
+
+.tours__content {
+
+
+padding: 20px; 
+}
+
+
+
+.tours__desc-block {
+font-size: 16px;
+  color: #666666;
+  display: inline-block;
+ 
+  margin-right: 28px;
+  margin-bottom: 18px;
+  
+}
+.tours__desc-block:last-child {
+  margin-right: 0;
+}
+.tours__text {
+  font-size: 14px;
+color: #303030;
+margin-bottom: 24px;
+
+}
+.news__list{
+  margin-bottom: 57px;
+}
+.news__item {
+display: inline-block;
+width: 557px;
+border-radius: 5px;
+vertical-align: top;
+position: relative;
+margin-right: 10px;
+
+}
+.news__item:last-child {
+  margin-right: 0;
+}
+
+.news__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news__title-text {
+      font-size: 36px;
+      font-weight: bold;
+}
+.news__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 25px; 
+  min-height: 140px;
+  
+}
+
+.news__date {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.news__subtitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.news__text {
+  font-size: 16px;
+  font-weight: normal;
+}
+.paginator {
+  text-align: center;
+}
+
+.paginator__display,.paginator__list {
+  display: inline-block;
+  vertical-align: middle;
+}
+.paginator__display {
+  margin-right: 26px;
+font-size: 16px;
+width: 125px;
+
+}
+.paginator__list{
+  margin-right: 10px;
+}
+.paginator__list:last-child{
+  margin-right: 0;
+}
+
+.paginator__item {
+  display: inline-block;
+  vertical-align: middle;
+line-height: 21px;
+}
+.paginator__item--active .paginator__linc {
+  background: #FFFFFF;
+  color: #F5170E;
+
+
+}
+.paginator__linc {
+  width: 32px;
+height: 32px;
+display: block;
+border-radius: 50%;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+
+}
+
+.about:before {
+  margin-top: 154px;
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  width: 490px;
+  height: 505px;
+  background: url("./images/content/offers/gates.png") center center / cover no-repeat; 
+}
+
+.about__desc {
+  content:"";
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -140px;
+  margin-top: 250px;
+  padding: 60px; 98px;
+  display: inline-block;
+  width: 785px;
+  height: 455px;
+  background: url("./images/content/offers/mountains.png") center center / cover no-repeat;
+}
+ .about__title{
+  font-size: 36px;
+  font-weight: bold; 
+  margin-bottom: 20px;
+  color: #060606;
+}
+
+  .about__desc-text{
+    font-size: 16px;
+    color:#060606;
+   margin-bottom: 50px;
+
+  }
+  .border-container__content {
+    border-top: 1px solid #FFFFfF;
+  }
+
+ .footer {
+   margin-top: 10px;
+   height: 152px;
+   position: relative;
+ }
+.contacts {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  font-style: normal;
+  text-align: right;
+
+}
+.contacts__desc {
+  font-size: 11px;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.socials__link {
+  display: block;
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  background: center center / no-repeat;
+}
+
+}
+
+.socials {
+  position: absolute;
+  top: 53px;
+  right: 300px;
+}
+.socials__item:last-child {
+  margin-right: 0;}
+
+.socials__item--icon--telegram .socials__link {
+  background-image: url("./images/icons/socials/t.png")
+}
+
+.socials__item--icon--telegram .socials__link:hover {
+  background-image: url("./images/icons/socials/t2.png");
+}
+.socials__item--icon--vk .socials__link {
+  background-image: url("./images/icons/socials/vk-blue.png")
+}
+
+.socials__item--icon--vk .socials__link:hover {
+  background-image: url("./images/icons/socials/vk.png");
+}
+.socials__item--icon--fb .socials__link {
+  background-image: url("./images/icons/socials/f.png")
+}
+
+.socials__item--icon--fb .socials__link:hover {
+  background-image: url("./images/icons/socials/f2.png");
+}
