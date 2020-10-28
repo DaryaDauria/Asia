@@ -102,7 +102,7 @@ color: #F5170E;
 
 .preview {
   width: 510px;
-    margin-bottom: 246px;
+    margin-bottom: 242px;
 }
 .preview__title {
   font-size: 72px;
@@ -113,7 +113,7 @@ color: #F5170E;
 }
 .preview__desc {
   font-size: 18px;
- 
+ margin-bottom: 33px;
 }
 .button {
   background: #F5170E;
@@ -133,24 +133,18 @@ border: 1px solid transparent;
 }
 
 .tours {
-  margin-bottom: 127px;
+  margin-bottom: 138px;
 }
-
 
 .tours__title {
- 
-  height: 49px;
-  width: 300px;
   display: inline-block;
-
-}
-.tours__fire {
   margin-bottom: 54px;
-}
+  
+} 
 
 .tours__title-text {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 36px;  
 }
 
 .tours__item {
@@ -161,7 +155,7 @@ margin-right: 15px;
 display: inline-block;
 border-radius: 5px;
 background: #fff;
-
+font-size: 14px;
 }
 .tours__item:last-child {
   margin-right: 0;
@@ -175,6 +169,7 @@ background: #fff;
   font-weight: bold;
  color: black;
  margin-bottom: 6px;
+ top: 23px;
 }
 
 .tours__content {
@@ -183,14 +178,17 @@ padding: 20px;
 }
 
 .tours__desc {
+  display: inline-flex;
+  justify-content: space-evenly;
   margin-right: 28px;
-  margin-bottom: 18px;
+  margin-bottom: 23px;
 }
 
 .tours__desc-block {
 font-size: 16px;
   color: #666666;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-evenly;
  
   
 }
@@ -204,10 +202,10 @@ margin-bottom: 24px;
 
 }
 .news__title{
-  margin-bottom: 51px;
+  margin-bottom: 49px;
 }
 .news__list{
-  margin-bottom: 57px;
+  margin-bottom: 48px;
 }
 .news__item {
 display: inline-block;
@@ -215,7 +213,7 @@ width: 557px;
 border-radius: 5px;
 vertical-align: top;
 position: relative;
-margin-right: 10px;
+margin-right: 21px;
 
 }
 .news__item:last-child {
@@ -237,8 +235,8 @@ margin-right: 10px;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 25px; 
-  min-height: 140px;
+  padding: 29px; 
+  min-height: 160px;
   
 }
 
@@ -306,7 +304,7 @@ line-height: 32px;
   vertical-align: top;
   content: "";
   width: 490px;
-  height: 505px;
+  height: 501px;
   background: url("./images/content/offers/gates.png") center center / cover no-repeat; 
 }
 
@@ -315,23 +313,28 @@ line-height: 32px;
   vertical-align: top;
   margin-left: -140px;
   margin-top: 100px;
-  padding: 60px; 
+  padding:  50px 100px; 
   display: inline-block;
   width: 785px;
   height: 455px;
   background: url("./images/content/offers/mountains.png") center center / cover no-repeat;
+}
+
+.about__desc-content {
+  padding: 70px 100px 65px 61px;
 }
  .about__title{
   font-size: 36px;
   font-weight: bold; 
   margin-bottom: 20px;
   color: #060606;
+
 }
 
   .about__desc-text{
     font-size: 16px;
     color:#060606;
-   margin-bottom: 50px;
+   margin-bottom: 56px;
 
   }
   .footer-container__content {
@@ -385,8 +388,8 @@ line-height: 32px;
 .socials__item--icon--telegram .socials__link:hover {
   background-image: url("./images/icons/socials/t2.png");
 }
-.socials__item--icon--vk .socials__link {
-  background-image: url("./images/icons/socials/vk-blue.png");
+.socials__item--icon--telegram .socials__link {
+  background-image: url("./images/icons/socials/t.png");
 }
 
 .socials__item--icon--vk .socials__link:hover {
