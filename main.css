@@ -48,39 +48,42 @@ box-sizing: border-box;
  }
 .header {
   min-height: 94px;
+
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 131px;
 }
 
 .logo {
-  display: block;
   position: absolute;
-  top: 24px;
-  left: 0px;
+  top: 33px;
+  left: 4px;
 }
 
 .menu {
   position: absolute;
-  top: 28px;
-  left: 155px;
+  top: 37px;
+  left: 160px;
 }
 
 .contacts {
  
-  right: 0px;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+ margin-top: 12px;
   text-align: right
 }
 
-.menu__item{
-display: inline-block;
+.menu__item {
+display: inline-flex;
+justify-content: space-between;
 vertical-align: middle;
-margin-right: 54px;
+margin-right: 51px;
 }
-.menu__item:last-child {
-  margin-right: 0;
+/* .menu__item:last-child {
+  margin-right: 0; */
 }
-.menu__link--activ.menu__link{
+
+.menu__link--activ .menu__link{
 color: #F5170E;
 }
 .menu__link {
@@ -93,7 +96,7 @@ color: #F5170E;
 .contacts__tel {
   text-decoration: none;
   font-size: 26px;
-  margin-bottom: 4px;
+  margin-bottom: -2px;
 }
 .contacts__work{
   font-size: 13px;
@@ -102,7 +105,7 @@ color: #F5170E;
 
 .preview {
   width: 510px;
-    margin-bottom: 242px;
+    margin-bottom: 246px;
 }
 .preview__title {
   font-size: 72px;
@@ -118,13 +121,12 @@ color: #F5170E;
 .button {
   background: #F5170E;
   border-radius: 35px;
-  padding:18px 40px;
+  padding:18px 29px;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   width: 168px;
 height: 55px;
-
 border: 1px solid transparent;
 }
 .button:hover {
@@ -133,12 +135,11 @@ border: 1px solid transparent;
 }
 
 .tours {
-  margin-bottom: 138px;
+  margin-bottom: 143px;
 }
 
 .tours__title {
-  display: inline-block;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
   
 } 
 
@@ -147,68 +148,92 @@ border: 1px solid transparent;
   font-size: 36px;  
 }
 
+.tours__list {
+  display: flex;
+  align-items: stretch;
+
+}
 .tours__item {
 width: 362px;
 height: 436px;
 vertical-align: top;
-margin-right: 15px;
-display: inline-block;
+margin-right: 31px;
 border-radius: 5px;
 background: #fff;
-font-size: 14px;
+/* font-size: 14px; */
 }
 .tours__item:last-child {
   margin-right: 0;
 }
-.tours:last-child {
-  margin-right: 0px;
-}
+
 
 .tours__subtitle {
   font-size: 24px;
   font-weight: bold;
  color: black;
- margin-bottom: 6px;
- top: 23px;
+ margin-bottom: 16px; 
 }
 
 .tours__content {
+padding: 13px 14px 26px 24px; 
 
-padding: 20px; 
 }
 
 .tours__desc {
-  display: inline-flex;
-  justify-content: space-evenly;
-  margin-right: 28px;
+  display: flex;
+  justify-content: space-between;
+ 
   margin-bottom: 23px;
 }
 
 .tours__desc-block {
 font-size: 16px;
   color: #666666;
-  display: inline-flex;
-  justify-content: space-evenly;
- 
-  
+  display: flex;
+  justify-content: space-between;
+  margin-right: 42px;
+  line-height: 31px;
 }
-.tours__desc-block:last-child {
-  margin-right: 0;
+ 
+.tours__desc-block-img {
+  margin-right: 10px;
 }
 .tours__text {
   font-size: 14px;
 color: #303030;
-margin-bottom: 24px;
+margin-bottom: 28px;
 
 }
-.news__title{
-  margin-bottom: 49px;
+.button__min{
+  background: #fff;
+  border-radius: 35px;
+  padding:18px 29px;
+  color:  #F5170E;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 135px;
+height: 55px;
+border-color: #F5170E;
 }
+
+.button__min:hover {
+  background: #F5170E;
+  color:#fff;
+}
+
+
+.news__title{
+ margin-bottom: 47px;
+}
+
 .news__list{
-  margin-bottom: 48px;
+  display: flex;
+justify-content: space-between;
+margin-bottom: 48px;
+
 }
 .news__item {
-display: inline-block;
+
 width: 557px;
 border-radius: 5px;
 vertical-align: top;
@@ -226,6 +251,8 @@ margin-right: 21px;
   height: 100%;
   object-fit: cover;
 }
+
+
 .news__title-text {
       font-size: 36px;
       font-weight: bold;
@@ -235,19 +262,22 @@ margin-right: 21px;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 29px; 
-  min-height: 160px;
+  padding: 15px 19px 12px 33px;
+  min-height: 157px;
   
 }
 
 .news__date {
+
   font-size: 14px;
   font-weight: normal;
 }
 
 .news__subtitle {
+
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 .news__text {
   font-size: 16px;
@@ -258,25 +288,26 @@ margin-right: 21px;
 }
 
 .paginator__display,.paginator__list {
-  display: inline-block;
-  vertical-align: middle;
+  display: inline-flex;
+  justify-content: space-between;
+
 }
 .paginator__display {
-  margin-right: 26px;
+  margin-right: 43px;
 font-size: 16px;
 width: 125px;
 
 }
 .paginator__list{
-  margin-right: 10px;
-}
-.paginator__list:last-child{
-  margin-right: 0;
+  margin-left: 3px;
+width: 183px;
 }
 
+
 .paginator__item {
-  display: inline-block;
-  vertical-align: middle;
+
+  display: flex;
+  justify-content: center;
 
 }
 .paginator__item--active .paginator__linc {
@@ -288,20 +319,23 @@ width: 125px;
 .paginator__linc {
   width: 32px;
 height: 32px;
-display: block;
+display: flexbox;
+justify-content:space-between;
 border-radius: 50%;
 text-decoration: none;
 font-weight: bold;
 font-size: 16px;
 line-height: 32px;
+
 }
 .about {
   margin-top: 154px;
-  margin-bottom: 38px;
+  margin-bottom: 43px;
 }
 .about:before {
-  display: inline-block;
-  vertical-align: top;
+  display: inline-flex;
+ 
+ 
   content: "";
   width: 490px;
   height: 501px;
@@ -326,7 +360,7 @@ line-height: 32px;
  .about__title{
   font-size: 36px;
   font-weight: bold; 
-  margin-bottom: 20px;
+  margin-bottom: 29px;
   color: #060606;
 
 }
@@ -334,7 +368,7 @@ line-height: 32px;
   .about__desc-text{
     font-size: 16px;
     color:#060606;
-   margin-bottom: 56px;
+   margin-bottom: 40px;
 
   }
   .footer-container__content {
@@ -342,25 +376,27 @@ line-height: 32px;
   }
 
  .footer {
-   margin-top: 40px;
-   height: 152px;
+   margin-top: 13px;
+   height: 130px;
    position: relative;
  }
 .contacts {
   position: absolute;
-  top: 10px;
+  top: 16px;
   right: 0;
   font-style: normal;
   text-align: right;
 
 }
+
 .contacts__desc {
   font-size: 11px;
+ 
 }
 .socials {
   position: absolute;
-  top: 53px;
-  right: 300px;
+  top: 38px;
+  right: 259px;
 }
 
 .socials__item {
@@ -369,36 +405,40 @@ line-height: 32px;
   margin-right: 10px;
 }
 .socials__item:last-child {
-  margin-right: 0;}
-  
+  margin-right: 0;
 }
+  
+
 .socials__link {
   display: block;
   text-decoration: none;
   width: 36px;
   height: 36px;
-  background: center center / no-repeat;
+  background: cover no-repeat;
 
 }
 
-.socials__item--icon--telegram .socials__link {
+.socials__item--icon--tg .socials__link {
   background-image: url("./images/icons/socials/t.png");
 }
-
-.socials__item--icon--telegram .socials__link:hover {
+.socials__item--icon--tg .socials__link:hover {
   background-image: url("./images/icons/socials/t2.png");
 }
-.socials__item--icon--telegram .socials__link {
-  background-image: url("./images/icons/socials/t.png");
-}
-
-.socials__item--icon--vk .socials__link:hover {
+.socials__item--icon--vk .socials__link {
   background-image: url("./images/icons/socials/vk.png");
+}
+.socials__item--icon--vk .socials__link:hover {
+  background-image: url("./images/icons/socials/vk-blue.png");
 }
 .socials__item--icon--fb .socials__link {
   background-image: url("./images/icons/socials/f.png");
 }
-
 .socials__item--icon--fb .socials__link:hover {
   background-image: url("./images/icons/socials/f2.png");
+}
+.socials__item--icon--insta .socials__link {
+  background-image: url("./images/icons/socials/in.png");
+}
+.socials__item--icon--insta .socials__link:hover {
+  background-image: url("./images/icons/socials/in2.png");
 }
